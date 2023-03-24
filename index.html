@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- js -->
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <img src="./images/logo.svg" class="logo" alt="logo" />
+      <button class="hamburger" aria-label="hamburger">
+        <div class="bar"></div>
+      </button>
+      <div class="navigation">
+        <nav>
+          <div class="features-container">
+            <span class="drop">Features</span>
+            <div class="features-links drop-down">
+              <div class="feature">
+                <img src="./images/icon-todo.svg" alt="icon-todo" />
+                Todo List
+              </div>
+              <div class="feature">
+                <img src="./images/icon-calendar.svg" alt="icon-calendar" />
+                Calendar
+              </div>
+              <div class="feature">
+                <img src="./images/icon-reminders.svg" alt="icon-reminders" />
+                Reminders
+              </div>
+              <div class="feature">
+                <img src="./images/icon-planning.svg" alt="icon-planning" />
+                Planning
+              </div>
+            </div>
+          </div>
+          <div class="company-container">
+            <span class="drop">Company</span>
+            <div class="company-links drop-down">
+              <p>History</p>
+              <p>Out Team</p>
+              <p>Blog</p>
+            </div>
+          </div>
+          <span>Careers</span>
+          <span>About</span>
+        </nav>
+        <div class="log-and-register">
+          <span>Login</span>
+          <a href="#" class="cta">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid-section">
+        <div class="main-content">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="cta-main">Learn more</a>
+          <div class="sponsors">
+            <img src="./images/client-databiz.svg" alt="client-databiz" />
+            <img src="./images/client-audiophile.svg" alt="client-audiophile" />
+            <img src="./images/client-meet.svg" alt="client-meet" />
+            <img src="./images/client-maker.svg" alt="client-maker" />
+          </div>
+        </div>
+        <div class="mockup">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="./images/image-hero-desktop.png"
+            />
+            <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" />
+          </picture>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="#">Hugisko</a>
+      .
+    </footer>
+  </body>
+</html>
